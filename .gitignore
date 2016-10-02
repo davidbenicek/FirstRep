@@ -4,3 +4,6 @@ report/report.pdf
 report/report.synctex.gz
 report/report.toc
 unity/coke.apk
+*.apk
+*.apk.meta
+unity/Assets/FirstRep.apk.meta
