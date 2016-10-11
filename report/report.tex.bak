@@ -27,7 +27,7 @@ Something will go here.
 \section{Motivation}
 Frequent exercise and a healthy lifestyle have recently become an integral part of the western culture. Indeed, last year in America more people have exercised on a regular basis then ever before \cite{USexercise}. As people begin to adopt this new lifestyle it is immediately obvious that there are two distinct periods during which there seems to be a lack of coherent information. These are at the very beginning when a person begins to exercise for the first time and when a person begins to plateau and starts to experience diminishing returns for their work due to a lack of variation in their routine. It is important to note that a lack of coherent information does not necessarily mean a lack of data but instead a lack of singular consensus in the midst of conflicting and misleading information filled with fad diets, ill-informed advice and 'bro science'. It seems that there is therefore a need for a singular portal to which beginners and experienced gym goers alike can refer to for information regarding exercise.  
 
-\section{Aim}
+\section{Aim} \label{sec:aim}
 Tackling the entire topic of fitness in one application would be extremely difficult, if not impossible. Due to this we are going to focus on the gym environment and look to add value to users while they are in the gym. The aim of the application will be to help users understand how to use gym equipment, suggest a range of exercises that can be carried out on a given piece of equipment and demonstrate how to perform the exercise with correct and safe form. 
 
 One of the main goals of the app is for it to be responsive to the user's environment and heavily interactive so that the user has an immersive experience. An immersive experience will keep users engaged with the app however we must be careful as to not allow users to loose track of their surroundings completely. One possible way of achieving this balance is through augmented reality, which will allow us to give a somewhat immersive experience by super imposing realistic human models on their device's screen without the need for a completely virtualized reality.  
@@ -53,10 +53,13 @@ The quick brown fox jumped over the lazy dog.
 The quick brown fox jumped over the lazy dog.
 The quick brown fox jumped over the lazy dog.
 \subsection{Meeting with GUSA}
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
+When developing an app of any kind it is important to consider how you are going to market and distribute the finished product. This question is particularly interesting in our context because the app needs some real-life components (markers) to work and therefore needs to be pitched to both daily users and gyms. One of the first steps that I carried out, before doing much research into technologies and development was to arrange a meeting with the Glasgow University Sports Association (GUSA). I pitched my idea to the president of GUSA in an email and was able to arrange a meeting both with GUSA president and the Sport Development Manager at Glasgow University. The meeting 	was held on the 26th of July 2016 and yielded a number of interesting requirements and points of discussion, many of which I had not previously considered. 
+
+One point of discussion was the issue of liability. The main goal of the app is to demonstrate what perfect form of an exercise looks like, however there are conflicting views as to what 'perfect' form for an exercise is. One expert might argue one way and another might be completely opposed which will mean that the app will have to choose a side. If the chosen side is eventually found to be incorrect, or worse, dangerous there could be options of liability. A potential solution would be to show a disclaimer on or during app launch that notifies the user that all demonstrations of form are approximate and that the user should contact an expert if they are unsure how to properly and safely perform an exercise. 
+
+Another topic that was discussed was the possible danger that a user might find themselves in if they become too immersed in the app and loose track of their environment. This issue has already been brought up in \ref{sec:aim} and the hope is that over-immersion can be solved through augmented reality. A further possibility would be to display a pop-up warning based on on-screen time and app run time. 
+
+
 
 \chapter{Design}
 \section{User Experience}
@@ -71,6 +74,30 @@ The quick brown fox jumped over the lazy dog.
 The quick brown fox jumped over the lazy dog.
 
 \chapter{Implementation}
+The development of an augment reality phone application sounds quite daunting at first. The image recognition, 3D object imaging and use of sensors and mathematical calculations to pivot the projected image are undoubtedly complex however luckily for us, there are many libraries and tools that allow us to abstract the complex intricate work and allow us to focus on the core app development. Having said that, the initial learning curve to find, set up and get started with all the tools and technologies is quite steep. In this section we are first going to explore the numerous tools used throughout the project, justify their selection and talk about how they are used. Later we will talk about some of the challenges that had to be overcome during the implementation process.
+\subsection{Technologies used}
+\subsubsection{Git}
+One of the first tools that was set up as a part of the project was the Git version control system. Git is usually used in the open source community or within teams to allow easy integration between contributors however in our case Git is used to keep a backup of old versions of the project and to share the progress of the project with the project supervisor. 
+
+\subsubsection{Vuforia}
+Vuforia is one of the many open source augmented reality libraries \cite{vuforia}. Vuforia provides an online interface where you can upload different images which are then analysed for specific feature patterns that are used for matching. For example figure \ref{fig:coca_cola_features} show the feature patterns of a CocaCola logo. A collection of such targets can be exported as a database and later used in Unity for matching using optical recognition \cite{vuforia_unity}.
+\begin{figure}
+\centering
+\includegraphics[scale=1]{images/coca_cola_features.png}
+\caption{Patterns of features on the CocaCola logo.}
+\label{fig:coca_cola_features}
+\end{figure}
+
+Vuforia allows us to create markers but it is also a plugin for Unity and an SDK that is used in native Android code development \cite{vuforia_unity}.
+
+\subsubsection{Unity}
+
+
+\subsubsection{MakeHuman}
+
+
+\subsection{Trials and Tribulations }
+ 
 \chapter{Testing}
 
 \chapter{Conclusion}
