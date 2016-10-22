@@ -23,9 +23,10 @@ namespace Vuforia
 
 
         #region UNTIY_MONOBEHAVIOUR_METHODS
-    
+		public GameObject obj;
         void Start()
         {
+
             mTrackableBehaviour = GetComponent<TrackableBehaviour>();
             if (mTrackableBehaviour)
             {
@@ -68,6 +69,20 @@ namespace Vuforia
 
         private void OnTrackingFound()
         {
+			if(mTrackableBehaviour.TrackableName.Equals("squatRack"))
+			{
+				Debug.Log("Squaaat");
+				obj.transform.parent = mTrackableBehaviour.transform;
+				obj.transform.position = mTrackableBehaviour.transform.position;
+				obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 2);
+			}
+			else
+			{
+				Debug.Log("Currrrrrl");
+				obj.transform.parent = mTrackableBehaviour.transform;
+				obj.transform.position = mTrackableBehaviour.transform.position;
+				obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 1);
+			}
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
@@ -84,6 +99,8 @@ namespace Vuforia
             }
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+
+
         }
 
 
@@ -103,6 +120,9 @@ namespace Vuforia
             {
                 component.enabled = false;
             }
+
+			obj.transform.parent = null;
+			obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 0);
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
