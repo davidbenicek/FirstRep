@@ -14,16 +14,16 @@ namespace Vuforia
     public class DefaultTrackableEventHandler : MonoBehaviour,
                                                 ITrackableEventHandler
     {
-        #region PRIVATE_MEMBER_VARIABLES
- 
-        private TrackableBehaviour mTrackableBehaviour;
-    
-        #endregion // PRIVATE_MEMBER_VARIABLES
+		float native_width= 1920f;
+		float native_height= 1080f;
+		public Texture btntexture;
+		//public Texture LogoTexture;
+		//public Texture MobiliyaTexture;
+		private TrackableBehaviour mTrackableBehaviour;
 
-
-
-        #region UNTIY_MONOBEHAVIOUR_METHODS
+		private int mShowGUIButton = 0;
 		public GameObject obj;
+        #region UNTIY_MONOBEHAVIOUR_METHODS
         void Start()
         {
 
@@ -72,17 +72,20 @@ namespace Vuforia
 			if(mTrackableBehaviour.TrackableName.Equals("squatRack"))
 			{
 				Debug.Log("Squaaat");
-				obj.transform.parent = mTrackableBehaviour.transform;
-				obj.transform.position = mTrackableBehaviour.transform.position;
-				obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 2);
-			}
-			else
-			{
-				Debug.Log("Currrrrrl");
+				mShowGUIButton = 1;
 				obj.transform.parent = mTrackableBehaviour.transform;
 				obj.transform.position = mTrackableBehaviour.transform.position;
 				obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 1);
 			}
+			else
+			{
+				Debug.Log("Currrrrrl");
+				mShowGUIButton = 2;
+				obj.transform.parent = mTrackableBehaviour.transform;
+				obj.transform.position = mTrackableBehaviour.transform.position;
+				obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 2);
+			}
+
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
@@ -106,6 +109,8 @@ namespace Vuforia
 
         private void OnTrackingLost()
         {
+			mShowGUIButton = 0;
+
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
@@ -127,6 +132,60 @@ namespace Vuforia
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
 
+		void OnGUI() {
+
+			//set up scaling
+
+			//Rect mButtonRect = new Rect(1920-215,5,210,110);
+			GUIStyle myTextStyle = new GUIStyle(GUI.skin.textField);
+			myTextStyle.fontSize = 100;
+			myTextStyle.richText=true;
+
+			//GUI.DrawTexture(new Rect(5,1080- 115,350,110),LogoTexture); 
+			//GUI.DrawTexture (new Rect (1530, 970, 350, 110), MobiliyaTexture);
+
+
+			//if (!btntexture) // This is the button that triggers AR and UI camera On/Off
+			//{
+			//	Debug.LogError("Please assign a texture on the inspector");
+			//	return;
+			//}
+
+			switch(mShowGUIButton) {
+			case 1: //squat rack
+				if (GUI.Button(new Rect(50,30, 1500, 200), "High bar squat",myTextStyle))
+					{
+						Debug.Log("Clicked the button with text");
+						obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 1);
+
+					}
+				if (GUI.Button(new Rect(50, 230, 1500, 200), "Ovearhead squat",myTextStyle))
+					{
+						Debug.Log("Clicked the button with text");
+						obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 3);
+					}
+				break;
+			case 2:
+				GUI.Button (new Rect (50, 30, 1500, 200), "Curl",myTextStyle);
+					obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 2);
+				break;
+			case 0:
+					GUI.Label(new Rect(0, (Screen.height/2)-50, Screen.width, 100), "<b> Scan a marker! </b>",myTextStyle);
+				break;
+			
+
+				//GUI.Box (new Rect (1920 - 100,0,100,50), "Top-right");
+				//GUI.Box (new Rect (0,1080- 50,100,50), "Bottom-left");
+				//GUI.Box (new Rect (Screen.width - 100,Screen.height - 50,100,50), "Bottom right");
+
+				// draw the GUI button
+			//if (GUI.Button(mButtonRect, btntexture)) {
+					// do something on button click 
+			//		OpenVideoActivity();
+			//	}
+			}
+		}
+			
         #endregion // PRIVATE_METHODS
     }
 }
