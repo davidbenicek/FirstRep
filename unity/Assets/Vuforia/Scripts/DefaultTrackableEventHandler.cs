@@ -5,28 +5,34 @@ Confidential and Proprietary - Qualcomm Connected Experiences, Inc.
 ==============================================================================*/
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using AssemblyCSharp;
+using UnityEngine.UI;
 
-namespace Vuforia
-{
+namespace Vuforia{
+
     /// <summary>
     /// A custom handler that implements the ITrackableEventHandler interface.
     /// </summary>
     public class DefaultTrackableEventHandler : MonoBehaviour,
                                                 ITrackableEventHandler
     {
-		float native_width= 1920f;
-		float native_height= 1080f;
-		public Texture btntexture;
+
 		//public Texture LogoTexture;
 		//public Texture MobiliyaTexture;
 		private TrackableBehaviour mTrackableBehaviour;
 
-		private int mShowGUIButton = 0;
 		public GameObject obj;
+		public GameObject list;
+
+		public Dictionary<string, Exercise []> exercises = new Dictionary<string, Exercise []>();
+	
         #region UNTIY_MONOBEHAVIOUR_METHODS
         void Start()
         {
-
+			exercises.Add("squatRack",new Exercise[] {new Exercise("Highbar Squat",1), new Exercise("Overhead Squat",3)});
+			exercises.Add("curlStation",new Exercise []{new Exercise("Bicep Curl",2)});
             mTrackableBehaviour = GetComponent<TrackableBehaviour>();
             if (mTrackableBehaviour)
             {
@@ -49,8 +55,7 @@ namespace Vuforia
                                         TrackableBehaviour.Status newStatus)
         {
             if (newStatus == TrackableBehaviour.Status.DETECTED ||
-                newStatus == TrackableBehaviour.Status.TRACKED ||
-                newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
+                newStatus == TrackableBehaviour.Status.TRACKED)
             {
                 OnTrackingFound();
             }
@@ -69,37 +74,24 @@ namespace Vuforia
 
         private void OnTrackingFound()
         {
+			obj.SetActive(true);
+			list.SetActive (true);
 			if(mTrackableBehaviour.TrackableName.Equals("squatRack"))
 			{
 				Debug.Log("Squaaat");
-				mShowGUIButton = 1;
 				obj.transform.parent = mTrackableBehaviour.transform;
 				obj.transform.position = mTrackableBehaviour.transform.position;
-				obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 1);
+				setAnimation (1);
 			}
-			else
+			else if(mTrackableBehaviour.TrackableName.Equals("curlStation"))
 			{
 				Debug.Log("Currrrrrl");
-				mShowGUIButton = 2;
 				obj.transform.parent = mTrackableBehaviour.transform;
 				obj.transform.position = mTrackableBehaviour.transform.position;
-				obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 2);
+				setAnimation (2);
 			}
+			populateList (mTrackableBehaviour.TrackableName);
 
-            Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
-            Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
-
-            // Enable rendering:
-            foreach (Renderer component in rendererComponents)
-            {
-                component.enabled = true;
-            }
-
-            // Enable colliders:
-            foreach (Collider component in colliderComponents)
-            {
-                component.enabled = true;
-            }
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
 
@@ -109,29 +101,38 @@ namespace Vuforia
 
         private void OnTrackingLost()
         {
-			mShowGUIButton = 0;
 
-            Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
-            Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
-
-            // Disable rendering:
-            foreach (Renderer component in rendererComponents)
-            {
-                component.enabled = false;
-            }
-
-            // Disable colliders:
-            foreach (Collider component in colliderComponents)
-            {
-                component.enabled = false;
-            }
-
+			setAnimation (0);
 			obj.transform.parent = null;
-			obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 0);
+			obj.SetActive(false);
+			list.SetActive (false);
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
 
+		private void setAnimation(int animation){
+			Debug.Log("ANIMATION "+animation);
+			obj.gameObject.GetComponent<Animator> ().SetInteger ("state", animation);
+		}
+
+		private void populateList(string station){
+			int i;
+			for(var x =0;x<list.transform.childCount;x++){
+				list.transform.GetChild (x).gameObject.SetActive (true);
+			}
+			for (i = 0; i < exercises [station].Length; i++) {
+				Debug.Log("EXERCISE: "+i+ exercises[station][i].getName());
+				list.transform.GetChild(i).gameObject.GetComponentsInChildren<Text>()[0].text = exercises [station] [i].getName ();
+				Debug.Log(i);
+				int ani = exercises [station] [i].getAnimation ();
+				Debug.Log ("animation:" + ani);
+				list.transform.GetChild(i).gameObject.GetComponentsInChildren<Button>()[0].onClick.AddListener(() => setAnimation(ani));
+			}
+			for(i=i;i<list.transform.childCount;i++){
+				list.transform.GetChild (i).gameObject.SetActive (false);
+			}
+				
+		}
 		void OnGUI() {
 
 			//set up scaling
@@ -150,7 +151,7 @@ namespace Vuforia
 			//	Debug.LogError("Please assign a texture on the inspector");
 			//	return;
 			//}
-
+			/*
 			switch(mShowGUIButton) {
 			case 1: //squat rack
 				if (GUI.Button(new Rect(50,30, 1500, 200), "High bar squat",myTextStyle))
@@ -169,10 +170,10 @@ namespace Vuforia
 				GUI.Button (new Rect (50, 30, 1500, 200), "Curl",myTextStyle);
 					obj.gameObject.GetComponent<Animator> ().SetInteger ("state", 2);
 				break;
-			case 0:
+			default:
 					GUI.Label(new Rect(0, (Screen.height/2)-50, Screen.width, 100), "<b> Scan a marker! </b>",myTextStyle);
 				break;
-			
+			*/
 
 				//GUI.Box (new Rect (1920 - 100,0,100,50), "Top-right");
 				//GUI.Box (new Rect (0,1080- 50,100,50), "Bottom-left");
@@ -183,9 +184,10 @@ namespace Vuforia
 					// do something on button click 
 			//		OpenVideoActivity();
 			//	}
-			}
+
 		}
 			
         #endregion // PRIVATE_METHODS
     }
 }
+

@@ -2,8 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs">
     <Files>
-      <File FileName="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" Line="169" Column="37" />
-      <File FileName="Assets\EmptyClass.cs" Line="10" Column="1" />
+      <File FileName="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" Line="11" Column="2" />
+      <File FileName="Assets\home_screen.cs" Line="15" Column="1" />
+      <File FileName="Assets\default_view.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

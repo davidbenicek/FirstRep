@@ -25,7 +25,11 @@ public class ButtonPopup : MonoBehaviour, ITrackableEventHandler {
 			mTrackableBehaviour.RegisterTrackableEventHandler(this);
 		}
 	}
-
+	public void Update(){
+		if(Input.GetKeyDown(KeyCode.Escape)) { 
+			Application.Quit(); 
+		}
+	}
 	public void OnTrackableStateChanged(
 		TrackableBehaviour.Status previousStatus,
 		TrackableBehaviour.Status newStatus)
