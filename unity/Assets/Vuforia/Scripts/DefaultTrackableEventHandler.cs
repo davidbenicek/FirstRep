@@ -31,8 +31,8 @@ namespace Vuforia{
         #region UNTIY_MONOBEHAVIOUR_METHODS
         void Start()
         {
-			exercises.Add("squatRack",new Exercise[] {new Exercise("Highbar Squat",1), new Exercise("Overhead Squat",3)});
-			exercises.Add("curlStation",new Exercise []{new Exercise("Bicep Curl",2)});
+			exercises.Add("squatRack",new Exercise[] {new Exercise("Highbar Squat",10), new Exercise("Overhead Squat",11), new Exercise("Piston Squat",12), new Exercise("Front Squat",13)});
+			exercises.Add("curlStation",new Exercise []{new Exercise("Bicep Curl",20),new Exercise("Shoulder press",21)});
             mTrackableBehaviour = GetComponent<TrackableBehaviour>();
             if (mTrackableBehaviour)
             {
@@ -81,14 +81,14 @@ namespace Vuforia{
 				Debug.Log("Squaaat");
 				obj.transform.parent = mTrackableBehaviour.transform;
 				obj.transform.position = mTrackableBehaviour.transform.position;
-				setAnimation (1);
+				setAnimation (10);
 			}
 			else if(mTrackableBehaviour.TrackableName.Equals("curlStation"))
 			{
 				Debug.Log("Currrrrrl");
 				obj.transform.parent = mTrackableBehaviour.transform;
 				obj.transform.position = mTrackableBehaviour.transform.position;
-				setAnimation (2);
+				setAnimation (20);
 			}
 			populateList (mTrackableBehaviour.TrackableName);
 

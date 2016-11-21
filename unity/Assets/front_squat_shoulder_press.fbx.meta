@@ -1,0 +1,1801 @@
+fileFormatVersion: 2
+guid: 875b377da9870884fb51d0110cd3f5b2
+timeCreated: 1479158819
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ball_l
+    100002: ball_l_end
+    100004: ball_r
+    100006: ball_r_end
+    100008: calf_l
+    100010: calf_r
+    100012: clavicle_l
+    100014: clavicle_r
+    100016: foot_l
+    100018: foot_r
+    100020: //RootNode
+    100022: hand_l
+    100024: hand_r
+    100026: head
+    100028: head_end
+    100030: index_01_l
+    100032: index_01_r
+    100034: index_02_l
+    100036: index_02_r
+    100038: index_03_l
+    100040: index_03_l_end
+    100042: index_03_r
+    100044: index_03_r_end
+    100046: Lamp
+    100048: lowerarm_l
+    100050: lowerarm_r
+    100052: middle_01_l
+    100054: middle_01_r
+    100056: middle_02_l
+    100058: middle_02_r
+    100060: middle_03_l
+    100062: middle_03_l_end
+    100064: middle_03_r
+    100066: middle_03_r_end
+    100068: neck_01
+    100070: pelvis
+    100072: pinky_01_l
+    100074: pinky_01_r
+    100076: pinky_02_l
+    100078: pinky_02_r
+    100080: pinky_03_l
+    100082: pinky_03_l_end
+    100084: pinky_03_r
+    100086: pinky_03_r_end
+    100088: ring_01_l
+    100090: ring_01_r
+    100092: ring_02_l
+    100094: ring_02_r
+    100096: ring_03_l
+    100098: ring_03_l_end
+    100100: ring_03_r
+    100102: ring_03_r_end
+    100104: Root
+    100106: spine_01
+    100108: spine_02
+    100110: spine_03
+    100112: thigh_l
+    100114: thigh_r
+    100116: thumb_01_l
+    100118: thumb_01_r
+    100120: thumb_02_l
+    100122: thumb_02_r
+    100124: thumb_03_l
+    100126: thumb_03_l_end
+    100128: thumb_03_r
+    100130: thumb_03_r_end
+    100132: Ultimatebro
+    100134: Ultimatebro:Eyebrow001
+    100136: Ultimatebro:Eyelashes01
+    100138: Ultimatebro:High-poly
+    100140: Ultimatebro:M_swimming_trunks_01
+    100142: Ultimatebro:Male_muscle_13290
+    100144: Ultimatebro:Shoes06
+    100146: Ultimatebro:Short01
+    100148: Ultimatebro:Tank_top_01
+    100150: Ultimatebro:Teeth_base
+    100152: Ultimatebro:Tongue01
+    100154: upperarm_l
+    100156: upperarm_r
+    400000: ball_l
+    400002: ball_l_end
+    400004: ball_r
+    400006: ball_r_end
+    400008: calf_l
+    400010: calf_r
+    400012: clavicle_l
+    400014: clavicle_r
+    400016: foot_l
+    400018: foot_r
+    400020: //RootNode
+    400022: hand_l
+    400024: hand_r
+    400026: head
+    400028: head_end
+    400030: index_01_l
+    400032: index_01_r
+    400034: index_02_l
+    400036: index_02_r
+    400038: index_03_l
+    400040: index_03_l_end
+    400042: index_03_r
+    400044: index_03_r_end
+    400046: Lamp
+    400048: lowerarm_l
+    400050: lowerarm_r
+    400052: middle_01_l
+    400054: middle_01_r
+    400056: middle_02_l
+    400058: middle_02_r
+    400060: middle_03_l
+    400062: middle_03_l_end
+    400064: middle_03_r
+    400066: middle_03_r_end
+    400068: neck_01
+    400070: pelvis
+    400072: pinky_01_l
+    400074: pinky_01_r
+    400076: pinky_02_l
+    400078: pinky_02_r
+    400080: pinky_03_l
+    400082: pinky_03_l_end
+    400084: pinky_03_r
+    400086: pinky_03_r_end
+    400088: ring_01_l
+    400090: ring_01_r
+    400092: ring_02_l
+    400094: ring_02_r
+    400096: ring_03_l
+    400098: ring_03_l_end
+    400100: ring_03_r
+    400102: ring_03_r_end
+    400104: Root
+    400106: spine_01
+    400108: spine_02
+    400110: spine_03
+    400112: thigh_l
+    400114: thigh_r
+    400116: thumb_01_l
+    400118: thumb_01_r
+    400120: thumb_02_l
+    400122: thumb_02_r
+    400124: thumb_03_l
+    400126: thumb_03_l_end
+    400128: thumb_03_r
+    400130: thumb_03_r_end
+    400132: Ultimatebro
+    400134: Ultimatebro:Eyebrow001
+    400136: Ultimatebro:Eyelashes01
+    400138: Ultimatebro:High-poly
+    400140: Ultimatebro:M_swimming_trunks_01
+    400142: Ultimatebro:Male_muscle_13290
+    400144: Ultimatebro:Shoes06
+    400146: Ultimatebro:Short01
+    400148: Ultimatebro:Tank_top_01
+    400150: Ultimatebro:Teeth_base
+    400152: Ultimatebro:Tongue01
+    400154: upperarm_l
+    400156: upperarm_r
+    4300000: Ultimatebro:Tank_top_01
+    4300002: Ultimatebro:Shoes06
+    4300004: Ultimatebro:M_swimming_trunks_01
+    4300006: Ultimatebro:Tongue01
+    4300008: Ultimatebro:Teeth_base
+    4300010: Ultimatebro:Eyelashes01
+    4300012: Ultimatebro:Eyebrow001
+    4300014: Ultimatebro:High-poly
+    4300016: Ultimatebro:Short01
+    4300018: Ultimatebro:Male_muscle_13290
+    7400000: Ultimatebro|Action
+    7400002: Ultimatebro|FrontSquat
+    7400004: Ultimatebro|ShoulderPress
+    7400006: Ultimatebro|Untitled
+    9500000: //RootNode
+    13700000: Ultimatebro:Eyebrow001
+    13700002: Ultimatebro:Eyelashes01
+    13700004: Ultimatebro:High-poly
+    13700006: Ultimatebro:M_swimming_trunks_01
+    13700008: Ultimatebro:Male_muscle_13290
+    13700010: Ultimatebro:Shoes06
+    13700012: Ultimatebro:Short01
+    13700014: Ultimatebro:Tank_top_01
+    13700016: Ultimatebro:Teeth_base
+    13700018: Ultimatebro:Tongue01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Ultimatebro|Action
+      takeName: Ultimatebro|Action
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Lamp
+        weight: 0
+      - path: Ultimatebro
+        weight: 1
+      - path: Ultimatebro/Root
+        weight: 1
+      - path: Ultimatebro/Root/pelvis
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l/index_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l/middle_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l/pinky_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l/ring_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l/thumb_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r/index_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r/middle_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r/pinky_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r/ring_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r/thumb_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01/head/head_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/thigh_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l/ball_l/ball_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/thigh_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r/ball_r/ball_r_end
+        weight: 0
+      - path: Ultimatebro:Eyebrow001
+        weight: 0
+      - path: Ultimatebro:Eyelashes01
+        weight: 0
+      - path: Ultimatebro:High-poly
+        weight: 0
+      - path: Ultimatebro:M_swimming_trunks_01
+        weight: 0
+      - path: Ultimatebro:Male_muscle_13290
+        weight: 0
+      - path: Ultimatebro:Shoes06
+        weight: 0
+      - path: Ultimatebro:Short01
+        weight: 0
+      - path: Ultimatebro:Tank_top_01
+        weight: 0
+      - path: Ultimatebro:Teeth_base
+        weight: 0
+      - path: Ultimatebro:Tongue01
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ultimatebro|FrontSquat
+      takeName: Ultimatebro|FrontSquat
+      firstFrame: 0
+      lastFrame: 167
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Lamp
+        weight: 0
+      - path: Ultimatebro
+        weight: 1
+      - path: Ultimatebro/Root
+        weight: 1
+      - path: Ultimatebro/Root/pelvis
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l/index_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l/middle_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l/pinky_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l/ring_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l/thumb_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r/index_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r/middle_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r/pinky_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r/ring_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r/thumb_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01/head/head_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/thigh_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l/ball_l/ball_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/thigh_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r/ball_r/ball_r_end
+        weight: 0
+      - path: Ultimatebro:Eyebrow001
+        weight: 0
+      - path: Ultimatebro:Eyelashes01
+        weight: 0
+      - path: Ultimatebro:High-poly
+        weight: 0
+      - path: Ultimatebro:M_swimming_trunks_01
+        weight: 0
+      - path: Ultimatebro:Male_muscle_13290
+        weight: 0
+      - path: Ultimatebro:Shoes06
+        weight: 0
+      - path: Ultimatebro:Short01
+        weight: 0
+      - path: Ultimatebro:Tank_top_01
+        weight: 0
+      - path: Ultimatebro:Teeth_base
+        weight: 0
+      - path: Ultimatebro:Tongue01
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ultimatebro|ShoulderPress
+      takeName: Ultimatebro|ShoulderPress
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Lamp
+        weight: 0
+      - path: Ultimatebro
+        weight: 1
+      - path: Ultimatebro/Root
+        weight: 1
+      - path: Ultimatebro/Root/pelvis
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l/index_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l/middle_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l/pinky_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l/ring_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l/thumb_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r/index_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r/middle_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r/pinky_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r/ring_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r/thumb_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01/head/head_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/thigh_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l/ball_l/ball_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/thigh_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r/ball_r/ball_r_end
+        weight: 0
+      - path: Ultimatebro:Eyebrow001
+        weight: 0
+      - path: Ultimatebro:Eyelashes01
+        weight: 0
+      - path: Ultimatebro:High-poly
+        weight: 0
+      - path: Ultimatebro:M_swimming_trunks_01
+        weight: 0
+      - path: Ultimatebro:Male_muscle_13290
+        weight: 0
+      - path: Ultimatebro:Shoes06
+        weight: 0
+      - path: Ultimatebro:Short01
+        weight: 0
+      - path: Ultimatebro:Tank_top_01
+        weight: 0
+      - path: Ultimatebro:Teeth_base
+        weight: 0
+      - path: Ultimatebro:Tongue01
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Ultimatebro|Untitled
+      takeName: Ultimatebro|Untitled
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Lamp
+        weight: 0
+      - path: Ultimatebro
+        weight: 1
+      - path: Ultimatebro/Root
+        weight: 1
+      - path: Ultimatebro/Root/pelvis
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l/index_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l/middle_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l/pinky_03_l/pinky_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l/ring_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l/thumb_03_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r/index_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r/middle_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r/pinky_03_r/pinky_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r/ring_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r/thumb_03_r_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01/head
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/spine_01/spine_02/spine_03/neck_01/head/head_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/thigh_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l/ball_l
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_l/calf_l/foot_l/ball_l/ball_l_end
+        weight: 0
+      - path: Ultimatebro/Root/pelvis/thigh_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r/ball_r
+        weight: 1
+      - path: Ultimatebro/Root/pelvis/thigh_r/calf_r/foot_r/ball_r/ball_r_end
+        weight: 0
+      - path: Ultimatebro:Eyebrow001
+        weight: 0
+      - path: Ultimatebro:Eyelashes01
+        weight: 0
+      - path: Ultimatebro:High-poly
+        weight: 0
+      - path: Ultimatebro:M_swimming_trunks_01
+        weight: 0
+      - path: Ultimatebro:Male_muscle_13290
+        weight: 0
+      - path: Ultimatebro:Shoes06
+        weight: 0
+      - path: Ultimatebro:Short01
+        weight: 0
+      - path: Ultimatebro:Tank_top_01
+        weight: 0
+      - path: Ultimatebro:Teeth_base
+        weight: 0
+      - path: Ultimatebro:Tongue01
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_l
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_r
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: calf_l
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: calf_r
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_l
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_r
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine_01
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine_03
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck_01
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_l
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_r
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upperarm_l
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upperarm_r
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowerarm_l
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowerarm_r
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_l
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_r
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ball_l
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ball_r
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_01_l
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_02_l
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_03_l
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_01_l
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_02_l
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_03_l
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_01_l
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_02_l
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_03_l
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_01_l
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_02_l
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_03_l
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_01_l
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_02_l
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_03_l
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_01_r
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_02_r
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_03_r
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_01_r
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_02_r
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_03_r
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_01_r
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_02_r
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_03_r
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_01_r
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_02_r
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_03_r
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_01_r
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_02_r
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_03_r
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: front_squat_shoulder_press(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lamp
+      position: {x: -4.0762453, y: 5.903862, z: -1.005454}
+      rotation: {x: 0.16907571, y: -0.75588036, z: 0.27217132, w: 0.57094747}
+      scale: {x: 100.00001, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Root
+      position: {x: -0, y: 0.0026258999, z: 0}
+      rotation: {x: 0.70710677, y: 0.000000029802322, z: -0.7071068, w: -0.000000059604645}
+      scale: {x: 0.99999964, y: 0.99999964, z: 0.9999996}
+      transformModified: 1
+    - name: pelvis
+      position: {x: -0.096774995, y: 0.0031967594, z: -0.0000000042301695}
+      rotation: {x: -0.57973254, y: 0.40485826, z: 0.5797326, w: 0.40485814}
+      scale: {x: 1.0000001, y: 0.99999964, z: 0.9999997}
+      transformModified: 1
+    - name: spine_01
+      position: {x: -8.11795e-15, y: 0.009461773, z: -0.00000022411346}
+      rotation: {x: 0.24000898, y: -0.000000014901161, z: -0, w: 0.9707707}
+      scale: {x: 1.0000002, y: 1.0000006, z: 0.9999994}
+      transformModified: 1
+    - name: spine_02
+      position: {x: 1.2939442e-17, y: 0.007161409, z: -0.00000013902783}
+      rotation: {x: -0.13635077, y: 0.000000022130942, z: -0.000000034078248, w: 0.9906606}
+      scale: {x: 1.0000005, y: 0.99999845, z: 0.99999976}
+      transformModified: 1
+    - name: spine_03
+      position: {x: 1.00932496e-17, y: 0.006375715, z: -0.000000141263}
+      rotation: {x: -0.008271262, y: 0.000000011419207, z: -0.000000031304577, w: 0.99996585}
+      scale: {x: 1.0000002, y: 0.999999, z: 0.9999988}
+      transformModified: 1
+    - name: clavicle_l
+      position: {x: -0.0023478996, y: 0.02646882, z: 0.009531077}
+      rotation: {x: -0.017821977, y: -0.026077546, z: 0.7630295, w: 0.6455915}
+      scale: {x: 1.0000098, y: 1.000007, z: 1}
+      transformModified: 1
+    - name: upperarm_l
+      position: {x: 0.000000057965515, y: 0.017252274, z: -0.000000020079314}
+      rotation: {x: 0.025867794, y: -0.02249913, z: -0.061745852, w: 0.9975029}
+      scale: {x: 0.99999833, y: 1.0000013, z: 1.000003}
+      transformModified: 1
+    - name: lowerarm_l
+      position: {x: 0.0000008645654, y: 0.026336664, z: 0.0000001168251}
+      rotation: {x: 0.026195705, y: 0.014949638, z: -0.020454621, w: 0.99933577}
+      scale: {x: 1.0000043, y: 1.0000001, z: 1.0000032}
+      transformModified: 1
+    - name: hand_l
+      position: {x: -0.00000078380106, y: 0.02704084, z: -0.00000028789043}
+      rotation: {x: 0.10027009, y: -0.43979123, z: 0.013944268, w: 0.8923762}
+      scale: {x: 1.00001, y: 1.0000205, z: 0.9999992}
+      transformModified: 1
+    - name: index_01_l
+      position: {x: 0.0013348579, y: 0.0118714925, z: 0.0011439616}
+      rotation: {x: 0.041728884, y: -0.4800424, z: 0.025967315, w: 0.8758674}
+      scale: {x: 1.0000057, y: 0.99999994, z: 0.9999945}
+      transformModified: 1
+    - name: index_02_l
+      position: {x: 0.00000015899539, y: 0.0029249098, z: 0.00000021398067}
+      rotation: {x: 0.03845076, y: -0.0025772133, z: -0.0026803198, w: 0.9992536}
+      scale: {x: 1.0000008, y: 1.000007, z: 1.0000091}
+      transformModified: 1
+    - name: index_03_l
+      position: {x: -0.00000005092472, y: 0.002638418, z: -0.00000013018958}
+      rotation: {x: 0.038958926, y: -0.00006220557, z: -0.011009683, w: 0.99918026}
+      scale: {x: 0.9999993, y: 1.0000024, z: 0.9999968}
+      transformModified: 1
+    - name: index_03_l_end
+      position: {x: -0, y: 0.0029773999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: middle_01_l
+      position: {x: -0.0004665309, y: 0.011485676, z: -0.0011932554}
+      rotation: {x: 0.022498453, y: -0.41882288, z: 0.08868971, w: 0.90344644}
+      scale: {x: 1.0000151, y: 0.9999952, z: 0.9999975}
+      transformModified: 1
+    - name: middle_02_l
+      position: {x: 0.00000033527613, y: 0.0038410053, z: -0.000001173201}
+      rotation: {x: 0.03114767, y: -0.0014276198, z: -0.025870508, w: 0.99917895}
+      scale: {x: 0.9999999, y: 1.0000123, z: 1.0000094}
+      transformModified: 1
+    - name: middle_03_l
+      position: {x: 0.0000002386421, y: 0.003066647, z: 0.0000005337596}
+      rotation: {x: 0.040320225, y: -0.0000013060626, z: 0.0038767012, w: 0.99917936}
+      scale: {x: 1.0000018, y: 1.0000012, z: 0.999997}
+      transformModified: 1
+    - name: middle_03_l_end
+      position: {x: -0, y: 0.0030210747, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pinky_01_l
+      position: {x: -0.0039188806, y: 0.009339507, z: -0.0034625258}
+      rotation: {x: -0.018423757, y: -0.31176242, z: 0.10337982, w: 0.9443397}
+      scale: {x: 1.0000222, y: 0.999984, z: 0.99999034}
+      transformModified: 1
+    - name: pinky_02_l
+      position: {x: -0.00000055390876, y: 0.0023935153, z: 0.000000051441603}
+      rotation: {x: 0.037922315, y: -0.00062325574, z: -0.011362571, w: 0.9992159}
+      scale: {x: 0.9999982, y: 1, z: 1.0000011}
+      transformModified: 1
+    - name: pinky_03_l
+      position: {x: 0.00000022536143, y: 0.0017602883, z: 0.0000000484474}
+      rotation: {x: 0.0073255124, y: 0.000009029693, z: 0.013262878, w: 0.9998852}
+      scale: {x: 1.0000027, y: 1.0000082, z: 1.0000025}
+      transformModified: 1
+    - name: pinky_03_l_end
+      position: {x: -0, y: 0.0022319467, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: ring_01_l
+      position: {x: -0.0020175113, y: 0.010586655, z: -0.0026203017}
+      rotation: {x: -0.003542443, y: -0.3984447, z: 0.10600366, w: 0.91103923}
+      scale: {x: 1.0000176, y: 0.99998415, z: 0.9999906}
+      transformModified: 1
+    - name: ring_02_l
+      position: {x: -0.0000001610862, y: 0.0033732783, z: -0.0000003536977}
+      rotation: {x: 0.028133916, y: -0.0007746814, z: -0.028813407, w: 0.9991886}
+      scale: {x: 1.0000006, y: 1.0000064, z: 1.0000025}
+      transformModified: 1
+    - name: ring_03_l
+      position: {x: 0.00000017210841, y: 0.0027960066, z: 0.00000045888126}
+      rotation: {x: 0.037089445, y: 0.00006826245, z: 0.014931574, w: 0.99920046}
+      scale: {x: 1.0000012, y: 1.0000025, z: 0.99999845}
+      transformModified: 1
+    - name: ring_03_l_end
+      position: {x: -0, y: 0.002989836, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: thumb_01_l
+      position: {x: 0.0016172522, y: 0.004517647, z: 0.0016530552}
+      rotation: {x: 0.014452381, y: -0.7269433, z: -0.3558366, w: 0.5871328}
+      scale: {x: 0.9999988, y: 1.0000066, z: 0.99998796}
+      transformModified: 1
+    - name: thumb_02_l
+      position: {x: -0.0000001950562, y: 0.003486578, z: -0.00000085175037}
+      rotation: {x: 0.009682445, y: 0.015652051, z: 0.032229222, w: 0.9993111}
+      scale: {x: 1.0000056, y: 0.99999, z: 1.0000086}
+      transformModified: 1
+    - name: thumb_03_l
+      position: {x: 0.0000007849932, y: 0.0041234465, z: 0.00000047326088}
+      rotation: {x: 0.03459705, y: 0.0056994986, z: 0.007426741, w: 0.99935746}
+      scale: {x: 0.9999978, y: 0.9999994, z: 1.0000243}
+      transformModified: 1
+    - name: thumb_03_l_end
+      position: {x: -0, y: 0.0031075876, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: clavicle_r
+      position: {x: 0.0023478996, y: 0.02646882, z: 0.009531078}
+      rotation: {x: -0.017829508, y: 0.026071075, z: -0.7630294, w: 0.64559174}
+      scale: {x: 1.0000117, y: 1.0000143, z: 0.99999976}
+      transformModified: 1
+    - name: upperarm_r
+      position: {x: -0.000000053346156, y: 0.017252274, z: -0.000000012952368}
+      rotation: {x: -0.025868688, y: -0.022505227, z: -0.061744276, w: -0.9975029}
+      scale: {x: 0.99999017, y: 0.99999917, z: 1.0000006}
+      transformModified: 1
+    - name: lowerarm_r
+      position: {x: -0.00000086557117, y: 0.026336662, z: 0.00000011250376}
+      rotation: {x: 0.0261982, y: -0.014949973, z: 0.020456236, w: 0.9993357}
+      scale: {x: 1.0000055, y: 1.0000006, z: 1.000006}
+      transformModified: 1
+    - name: hand_r
+      position: {x: 0.0000007817894, y: 0.027040822, z: -0.00000029861926}
+      rotation: {x: 0.10027004, y: 0.43979484, z: -0.013944518, w: 0.8923744}
+      scale: {x: 1.0000122, y: 1.0000191, z: 0.9999756}
+      transformModified: 1
+    - name: index_01_r
+      position: {x: -0.0013348564, y: 0.011871509, z: 0.0011439718}
+      rotation: {x: -0.04173109, y: -0.48004243, z: 0.025965262, w: -0.8758673}
+      scale: {x: 0.9999877, y: 1.0000013, z: 1.0000015}
+      transformModified: 1
+    - name: index_02_r
+      position: {x: -0.00000015825033, y: 0.0029249068, z: 0.00000024281442}
+      rotation: {x: 0.03846573, y: 0.0025771242, z: 0.0026832279, w: 0.999253}
+      scale: {x: 1.0000032, y: 1.0000185, z: 1.0000019}
+      transformModified: 1
+    - name: index_03_r
+      position: {x: 0.000000044554472, y: 0.002638419, z: -0.00000013314187}
+      rotation: {x: 0.038958408, y: 0.00006214853, z: 0.011009155, w: 0.99918026}
+      scale: {x: 0.99999315, y: 0.9999982, z: 0.99998385}
+      transformModified: 1
+    - name: index_03_r_end
+      position: {x: -0, y: 0.0029773999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: middle_01_r
+      position: {x: 0.0004665354, y: 0.01148568, z: -0.0011932469}
+      rotation: {x: -0.022504136, y: -0.41882232, z: 0.088691, w: -0.9034464}
+      scale: {x: 1.0000095, y: 0.99999696, z: 1.0000085}
+      transformModified: 1
+    - name: middle_02_r
+      position: {x: -0.00000034078954, y: 0.0038410055, z: -0.0000011682882}
+      rotation: {x: 0.031146092, y: 0.0014277688, z: 0.025871392, w: 0.99917895}
+      scale: {x: 0.9999935, y: 1.0000063, z: 0.99999475}
+      transformModified: 1
+    - name: middle_03_r
+      position: {x: -0.00000023923815, y: 0.0030666383, z: 0.0000005205907}
+      rotation: {x: 0.040315013, y: 0.0000015187532, z: -0.0038761178, w: 0.99917954}
+      scale: {x: 1.0000026, y: 1.0000162, z: 1.0000014}
+      transformModified: 1
+    - name: middle_03_r_end
+      position: {x: -0, y: 0.0030210747, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pinky_01_r
+      position: {x: 0.003918883, y: 0.009339513, z: -0.003462513}
+      rotation: {x: 0.018420622, y: -0.31176236, z: 0.10337963, w: -0.94433975}
+      scale: {x: 1.0000182, y: 0.9999783, z: 0.999996}
+      transformModified: 1
+    - name: pinky_02_r
+      position: {x: 0.00000055016017, y: 0.0023935204, z: 0.000000049351947}
+      rotation: {x: 0.03792974, y: 0.0006227788, z: 0.011359931, w: 0.9992157}
+      scale: {x: 1.0000048, y: 1.0000256, z: 1.000007}
+      transformModified: 1
+    - name: pinky_03_r
+      position: {x: -0.00000024516135, y: 0.0017602959, z: 0.000000049360096}
+      rotation: {x: 0.0073253866, y: -0.000009249428, z: -0.013263065, w: 0.9998852}
+      scale: {x: 1.0000002, y: 0.99999934, z: 0.9999965}
+      transformModified: 1
+    - name: pinky_03_r_end
+      position: {x: -0, y: 0.0022319467, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: ring_01_r
+      position: {x: 0.002017518, y: 0.010586667, z: -0.0026202952}
+      rotation: {x: 0.003544354, y: -0.39844415, z: 0.10600452, w: -0.9110394}
+      scale: {x: 1.0000126, y: 0.9999795, z: 0.9999979}
+      transformModified: 1
+    - name: ring_02_r
+      position: {x: 0.00000015646219, y: 0.003373277, z: -0.00000034664757}
+      rotation: {x: 0.02813347, y: 0.0007746511, z: 0.028814461, w: 0.99918854}
+      scale: {x: 0.9999987, y: 1.0000118, z: 1.0000005}
+      transformModified: 1
+    - name: ring_03_r
+      position: {x: -0.00000017415732, y: 0.002796006, z: 0.00000046409664}
+      rotation: {x: 0.03709318, y: -0.00006846024, z: -0.014931524, w: 0.9992002}
+      scale: {x: 1.0000032, y: 1.0000113, z: 1.0000042}
+      transformModified: 1
+    - name: ring_03_r_end
+      position: {x: -0, y: 0.002989836, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: thumb_01_r
+      position: {x: -0.0016172546, y: 0.0045176595, z: 0.0016530635}
+      rotation: {x: -0.014455876, y: -0.7269433, z: -0.35584447, w: -0.58712786}
+      scale: {x: 1.0000015, y: 1.0000229, z: 0.99998975}
+      transformModified: 1
+    - name: thumb_02_r
+      position: {x: 0.00000020014122, y: 0.003486576, z: -0.00000085175037}
+      rotation: {x: 0.009683711, y: -0.015652137, z: -0.032240998, w: 0.99931073}
+      scale: {x: 1.0000182, y: 0.9999801, z: 1.0000112}
+      transformModified: 1
+    - name: thumb_03_r
+      position: {x: -0.0000007880851, y: 0.0041234433, z: 0.0000004699826}
+      rotation: {x: 0.03459951, y: -0.0056971484, z: -0.0074212234, w: 0.99935746}
+      scale: {x: 1.000005, y: 0.9999922, z: 1.0000169}
+      transformModified: 1
+    - name: thumb_03_r_end
+      position: {x: -0, y: 0.0031075876, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: neck_01
+      position: {x: -2.335413e-17, y: 0.034222372, z: 0.009484269}
+      rotation: {x: 0.23907243, y: -0.000000011198381, z: 0.000000036459532, w: 0.9710018}
+      scale: {x: 1, y: 0.9999997, z: 1.0000029}
+      transformModified: 1
+    - name: head
+      position: {x: 3.0733643e-10, y: 0.010389904, z: -0.00000013920013}
+      rotation: {x: -0.16989048, y: -0.000000014822594, z: -0.000000026834961, w: 0.985463}
+      scale: {x: 0.9999999, y: 1.0000007, z: 0.9999988}
+      transformModified: 1
+    - name: head_end
+      position: {x: -0, y: 0.015745895, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: thigh_l
+      position: {x: -0.011171998, y: -0.00022682118, z: -0.0012285289}
+      rotation: {x: 0.9686751, y: -0.07509017, z: 0.20248619, w: -0.12259467}
+      scale: {x: 1.0000007, y: 1.0000095, z: 1.0000104}
+      transformModified: 1
+    - name: calf_l
+      position: {x: 0.00000056281687, y: 0.044523187, z: 0.00000014096499}
+      rotation: {x: 0.053087473, y: -0.2272371, z: 0.014371935, w: 0.9722852}
+      scale: {x: 0.9999964, y: 0.9999915, z: 0.99999404}
+      transformModified: 1
+    - name: foot_l
+      position: {x: -0.0000004269462, y: 0.044823173, z: 0.000000019036232}
+      rotation: {x: -0.53865665, y: -0.0000021159647, z: 0.0000005625188, w: 0.84252536}
+      scale: {x: 1.0000019, y: 1.0000039, z: 1.0000058}
+      transformModified: 1
+    - name: ball_l
+      position: {x: -0.000000116555015, y: 0.014653241, z: 0.00000077299774}
+      rotation: {x: -0.27169338, y: -0.016768645, z: -0.007679607, w: 0.96220714}
+      scale: {x: 0.99999815, y: 1.0000026, z: 1.0000069}
+      transformModified: 1
+    - name: ball_l_end
+      position: {x: -0, y: 0.0074266354, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: thigh_r
+      position: {x: 0.011171998, y: -0.00022682294, z: -0.0012285296}
+      rotation: {x: 0.96867514, y: 0.075090125, z: -0.20248605, w: -0.122594655}
+      scale: {x: 1.0000005, y: 1.0000138, z: 1.0000126}
+      transformModified: 1
+    - name: calf_r
+      position: {x: -0.00000056445595, y: 0.044523194, z: 0.00000014185905}
+      rotation: {x: 0.05308755, y: 0.22723722, z: -0.014371973, w: 0.97228515}
+      scale: {x: 0.999999, y: 0.9999973, z: 0.99999875}
+      transformModified: 1
+    - name: foot_r
+      position: {x: 0.00000042628497, y: 0.044823173, z: 0.000000019297003}
+      rotation: {x: -0.53865665, y: 0.0000020712614, z: -0.0000006016344, w: 0.8425254}
+      scale: {x: 1.0000008, y: 0.9999975, z: 1.0000015}
+      transformModified: 1
+    - name: ball_r
+      position: {x: 0.00000011691824, y: 0.014653241, z: 0.00000077359374}
+      rotation: {x: -0.27169362, y: 0.016768552, z: 0.0076796208, w: 0.96220714}
+      scale: {x: 0.9999961, y: 1.0000113, z: 1.0000052}
+      transformModified: 1
+    - name: ball_r_end
+      position: {x: -0, y: 0.0074266354, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ultimatebro:Eyebrow001
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:Eyelashes01
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:High-poly
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:M_swimming_trunks_01
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:Male_muscle_13290
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:Shoes06
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:Short01
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:Tank_top_01
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:Teeth_base
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    - name: Ultimatebro:Tongue01
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

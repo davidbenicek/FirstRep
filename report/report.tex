@@ -40,14 +40,12 @@ In this document we are going to explore the different steps taken in the develo
 \subsection{Review of previous work} \label{sec:litrew}
 The term 'augmented reality' was coined by Tom Caudell, a Boeing researcher in 1990 \cite{rauterberg_history_2002}. Caudell first envisioned augmented reality as transparent screens that would be used to display complicated plans and designs. AR has evolved tremendously since the 1990s and with it so has it's definition. In order to understand augmented reality we first have to address the concept of mixed reality. Mixed reality is the overarching concept of blending the real and virtual worlds \cite{milgram_taxonomy_1994}. Within the field of mixed reality there are many branches which lie on a spectrum between a non-manipulated, real environment and a fully digital environment created in virtual reality. The spectrum can be see in figure \ref{fig:ar-spectrum} and it is important to note that immersion increases as we move to the right from the real environment to the virtual environment. Augmented reality sits in the  center left of the spectrum and can be broadly defined as "technologies that project digital materials onto real world objects"\cite{cuendet_designing_2013}. Importantly, augmented reality integrates  "3D virtual objects ... into a 3D real environment in real time"\cite{azuma_survey_1997}. The added virtual content is obviously superimposed and the distinction between real and virtual is clear, unlike with other technologies further to the right on the spectrum. For example, on the extreme right of the spectrum is virtual reality, which fully replaces the real world with computer generated scenes and aims to mimic the real world \cite{tamura_mixed_2001}. This paper is only concerned with augmented reality since it provides just enough immersion to exploit phenomenon such as situativity and yet, does not cause the user to be completely absorbed into the application, nor does it require additional equipment. 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=1]{images/ar-spectrum.png}
 \caption{A spectrum overview of mixed reality technologies (Milgran 1994)}
 \label{fig:ar-spectrum}
 \end{figure}
-
-\pagebreak
 
 AR has been used in a number of disciplines, ranging from medicine to entertainment to construction.\cite{azuma_recent_2001}. It seems that there has been no previous research done on the possible application of AR in the fitness sector and therefore we will draw on insights from other applications of AR. We will especially focus on pedagogical applications of AR with the hope of drawing parallels between teaching a class and instructing users to perform exercises in the gym. 
 
@@ -121,14 +119,43 @@ Vuforia is one of the many open source augmented reality libraries \cite{vuforia
 Vuforia allows us to create markers but it is also a plugin for Unity and an SDK that is used in native Android code development \cite{vuforia_unity}.
 
 \subsubsection{Unity}
-
+Unity is a well known 3D cross-platform games engine that is widely used in the field. There are many other game engine alternatives, however, Unity was chosen due to it's seamless integration with Vuforia and MakeHuman. Unity also allows us to export into different platform native application and so, even though Android is out target platform it would be relatively easy to port the application over to an iOS device or Windows mobile. 
 
 \subsubsection{MakeHuman}
-
+MakeHuman is a humanoid modeling software that makes creating life-like humanoid	 figures very easy. MakeHuman has a simple interface which allows the users to customize and configure their character. Many open-source online forums are also dedicated to creating a large database of download-able body parts and clothing, enriching the variety of customization that MakeHuman provides.
 
 \subsection{Trials and Tribulations }
- 
-\chapter{Testing}
+During the implementation of the application there have been a number of challenges and difficulties, some of the most noteworthy trials and tribulations will be discussed in this section. 
+
+\subsubsection{Logical Layout}
+One of the first major issues encountered was concerning the logical layout of the application. The initial intention was to create the core AR functionality of the app in Unity and then export the project into Android Studio where I would create the other views such as the home screen, setting page etc. I spent a couple days setting up the environment, learning about app development for Android and following tutorials to acquaint myself with the tools. I was eventually able to export the Unity project, import it into Android Studio and build a home screen that would load on start up and allow the user to navigate to a camera view which would contain the AR part of the app. Unfortunately, whenever the user would switch between the two views the unity launch screen would show up. This is undesirable for two reasons. First, showing the launch screen slows down the use of the app as it introduces unnecessary latency. Secondly, showing a splash screen inbetween two of the main views deteriorates the natural flow within the app since splash screen are usually shown on startup and could cause users to get confused about how to navigate between views. Furthermore, showing a seemingly random branded splash screen in the middle of the app takes away from the brand and united design that the app should have. 
+
+In order to remedy the situation I tried a number of fixes. For example, I tried loading the camera view first on startup and then automatically switching to the home view once the splash screen loaded. While this did successfully show the splash screen on launch, it did not solve the problem because the splash screen would still show when switching onto the camera view. I also looked into modifying the automatically generated unity files to stop the splash screen showing up all together but in my research I found out this violates the Unity terms and conditions. In order to remove the splash screen legally I would need to upgrade to the professional version of Unity (TODO: Cite unity) which is not an option due to financial constraints of the project.
+
+The solution arose organically as a result of me becoming more familiar with Unity. As I began building the user interface for the camera view I discovered that Unity has an inbuilt tool for creating interfaces and I could simply create a new scene in Unity which will then serve as the main menu. By attaching scripts to different components I can make the menu dynamic and add functionality. The only disadvantage with this approach that I will be forced to write the scripts in C\#, which I am not familiar with, as apposed to Java, which I am proficient in. 
+
+
+\subsection{End of first iteration}
+\subsubsection{2nd Meeting with GUSA}
+A second meeting with the president of GUSA took place on the 15th of November 2016 in order to discuss progress on the application and gather feedback from a de facto expert in the field. During the meeting I demoed the application and asked the president for his opinion on a number of design choices and possible features. At the time of the meeting the application was largely at a proof of concept stage. Consequently, the design of the application (as can be seen in figure \ref{fig:it1}) was temporary and much of the discussion during the meeting revolved around possible additional features that could be implemented in the future. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{images/iteration1_screenshots.png}
+\caption{Screenshots to show the state of the app at the end of the first iteration}
+\label{fig:it1}
+\end{figure}
+
+Perhaps the most important outcome of the meeting was a reminder to the agreed upon size of the QR codes. In the initial meeting we discussed the QR codes being about the size of a postage stamp but so far during implementation I have simply been using large QR codes that take up about half a page of A4 paper simply because that is how they came out when I first printed them. I had completely lost track of the size and assumed I can simply shrink the QR code down when I need to however this is not the case. The actual sizing issue will be solved by simply adjusting the ration of QR code to avatar however there is a deeper issue here. By shrinking the QR code and making the avatar human size we will need the user to step back in order to fit the entire avatar into the screen view. It could be quite awkward for a user to have to come close to a machine, scan the QR code and then take a step back, all while pointing the phone in the correct direction. Furthermore, if the avatar appears right when the user scans the QR code, the user will be way too close and their entire screen will be filled by the avatar. It might be the case that we will have to calculate the distance between the user and the QR code and perhaps tell the user to step back until they are far enough to see the entire avatar - this could be potentially tricky and needs to be explored in the next phase of implementation. 
+
+During the meeting, future functionality and possible extensions were also discussed. One feature that the president thought would be useful was a browse feature where you can group exercises by either equipment or target muscle group and then browse through them. When the user select an exercise, it will be rendered on the screen just like if the user triggered the exercise by scanning a QR code.
+
+The topic of how the app could possibly be monetized also came up. While this is not the short term objective, nor is it a priority for now, it is important to consider options and make sure not to close any doors that could prove to be important in the long run. The option of a freemium model was discussed. A non-paying user would have access to a set of basic exercises and could download additional packs of exercises that are more advance or more specific. For example, a user could download a yoga package or an Olympic weightlifting package and thus expand the database of exercises that they have access to. This would not only be quite an effective way of generating income but it would also mean that packages of exercises can be rolled out in stages rather than having to do a significant amount of work before rolling out the app. In the long term, there is a lot of room for extra functionality. Features to log workouts, integrate with myFitnessPal or to download entire training programs are all feasible, however, these lie far beyond the scope of this paper and will thus not be discussed further here.
+
+Overall, the GUSA president was quite impressed by app so far but was also aware of the fact that much more work is yet to be done. The meeting helped justify and confirm many of the design choices that I made. For example, the president and I agree on including equipment in the animations by default but having an option to toggle it on and off. We also agreed on having an about page which will explain how to safely use the app and then also have pop ups with safety disclosures that remind the user to stay safe and pay attention to their surroundings. Last but not least, we also discussed user testing and decided that this will take place in the Glasgow University Gym in the next few weeks.
+
+
+\subsubsection{User Testing}
 
 \chapter{Conclusion}
 

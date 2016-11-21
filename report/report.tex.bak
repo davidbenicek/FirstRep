@@ -87,6 +87,9 @@ One point of discussion was the issue of liability. The main goal of the app is 
 
 GUSA was cautious about how the app is going to be distributed and marketed since they are themselves working on a designated GUSA app and are also pushing the LifeFitness app to their customers. The main concern was that by having too many apps marketed in the gym, customers would be overwhelmed and end up using none of the apps. It was decided that in order to solve this dilemma, my app would not be distributed by GUSA nor will it have any relation to GUSA. Instead the Glasgow University gym will simply be an environment for testing. 
 
+\section{Acceptance Criteria}
+(TODO next)
+
 
 \chapter{Design}
 \section{User Experience}
@@ -118,7 +121,7 @@ Vuforia is one of the many open source augmented reality libraries \cite{vuforia
 Vuforia allows us to create markers but it is also a plugin for Unity and an SDK that is used in native Android code development \cite{vuforia_unity}.
 
 \subsubsection{Unity}
-
+Unity is a well known 3D cross-platform games engine that is widely used in the field. There are many other game engine alternatives, however, Unity was chosen due to it's seamless integration with Vuforia and MakeHuman. Unity also allows us to export into different platform native application and so, even though Android is out target platform it would be relatively easy to port the application over to an iOS device or Windows mobile. 
 
 \subsubsection{MakeHuman}
 
