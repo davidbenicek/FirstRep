@@ -6,11 +6,13 @@ namespace AssemblyCSharp
 	{
 		private String displayName;
 		private int animation;
+		private String [] muscles;
 
-		public Exercise (string name, int a)
+		public Exercise (string d, int a, String [] m)
 		{
-			this.displayName = name;
+			this.displayName = d;
 			this.animation = a;
+			this.muscles = m;
 		}
 		public string getName(){
 			return this.displayName;
@@ -18,6 +20,10 @@ namespace AssemblyCSharp
 
 		public int getAnimation(){
 			return this.animation;
+		}		
+
+		public String [] getMuscles(){
+			return this.muscles;
 		}
 	}
 }

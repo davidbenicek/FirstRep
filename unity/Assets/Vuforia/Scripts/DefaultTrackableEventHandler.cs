@@ -9,6 +9,8 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using AssemblyCSharp;
 using UnityEngine.UI;
+using System;
+
 
 namespace Vuforia{
 
@@ -22,17 +24,20 @@ namespace Vuforia{
 		//public Texture LogoTexture;
 		//public Texture MobiliyaTexture;
 		private TrackableBehaviour mTrackableBehaviour;
-
-		public GameObject obj;
+		private int track;
+		private String eyesOn = "nothing";
+		private long lostTime;
+		public GameObject ultimateBro;
 		public GameObject list;
-
+	
 		public Dictionary<string, Exercise []> exercises = new Dictionary<string, Exercise []>();
 	
         #region UNTIY_MONOBEHAVIOUR_METHODS
         void Start()
         {
-			exercises.Add("squatRack",new Exercise[] {new Exercise("Highbar Squat",10), new Exercise("Overhead Squat",11), new Exercise("Piston Squat",12), new Exercise("Front Squat",13)});
-			exercises.Add("curlStation",new Exercise []{new Exercise("Bicep Curl",20),new Exercise("Shoulder press",21)});
+			exercises.Add("squatRack",new Exercise[] {new Exercise("Highbar Squat",10, new String [] {"Quads","Lower Back"}), new Exercise("Overhead Squat",11, new String [] {"Quads","Deltoids","Lower Back"}), new Exercise("Piston Squat",12,new String [] {"Quads","Lower Back"}), new Exercise("Front Squat",13, new String [] {"Quads","Abs"})});
+			exercises.Add("curlStation",new Exercise []{new Exercise("Bicep Curl",20,new String []  {"Biceps"}),new Exercise("Shoulder press",21, new String [] {"Deltoids"})});
+			exercises.Add("deadlift",new Exercise []{new Exercise("Row",30, new String []  {"Biceps","Upper Back", "Lower Back"})});
             mTrackableBehaviour = GetComponent<TrackableBehaviour>();
             if (mTrackableBehaviour)
             {
@@ -54,14 +59,18 @@ namespace Vuforia{
                                         TrackableBehaviour.Status previousStatus,
                                         TrackableBehaviour.Status newStatus)
         {
-            if (newStatus == TrackableBehaviour.Status.DETECTED ||
-                newStatus == TrackableBehaviour.Status.TRACKED)
+			Debug.Log ("YOO " + newStatus);
+            if ((newStatus == TrackableBehaviour.Status.DETECTED ||
+                newStatus == TrackableBehaviour.Status.TRACKED ||
+				newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED) && (!eyesOn.Equals(mTrackableBehaviour.TrackableName)))
             {
+				eyesOn = mTrackableBehaviour.TrackableName;
                 OnTrackingFound();
             }
             else
             {
-                OnTrackingLost();
+
+				OnTrackingLost();
             }
         }
 
@@ -72,39 +81,48 @@ namespace Vuforia{
         #region PRIVATE_METHODS
 
 
-        private void OnTrackingFound()
-        {
-			obj.SetActive(true);
+		private void OnTrackingFound()
+		{
+			Handheld.Vibrate ();
+			ultimateBro.SetActive(true);
 			list.SetActive (true);
-			if(mTrackableBehaviour.TrackableName.Equals("squatRack"))
-			{
-				Debug.Log("Squaaat");
-				obj.transform.parent = mTrackableBehaviour.transform;
-				obj.transform.position = mTrackableBehaviour.transform.position;
+			Debug.Log("Trackable " + eyesOn + " found");
+			switch (eyesOn) {
+			case "squatRack":
+				Debug.Log ("Squat Rack");
+				ultimateBro.transform.parent = mTrackableBehaviour.transform;
+				ultimateBro.transform.position = mTrackableBehaviour.transform.position;
 				setAnimation (10);
-			}
-			else if(mTrackableBehaviour.TrackableName.Equals("curlStation"))
-			{
-				Debug.Log("Currrrrrl");
-				obj.transform.parent = mTrackableBehaviour.transform;
-				obj.transform.position = mTrackableBehaviour.transform.position;
+				break;
+			case "curlStation":
+				Debug.Log ("Curl Station");
+				ultimateBro.transform.parent = mTrackableBehaviour.transform;
+				ultimateBro.transform.position = mTrackableBehaviour.transform.position;
 				setAnimation (20);
+				break;
+			case "deadlift":
+				Debug.Log ("Deadlift Platform");
+				ultimateBro.transform.parent = mTrackableBehaviour.transform;
+				ultimateBro.transform.position = mTrackableBehaviour.transform.position;
+				setAnimation (30);
+				break;
 			}
+			ultimateBro.transform.localRotation = Quaternion.Euler(0, 180, 0);
 			populateList (mTrackableBehaviour.TrackableName);
 
+			//Vector3 v3 = new Vector3(930,180,0);
+			//obj.transform.position = v3;
 
-            Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
 
-
-        }
+		}
 
 
         private void OnTrackingLost()
         {
-
+			eyesOn = "nothing";
 			setAnimation (0);
-			obj.transform.parent = null;
-			obj.SetActive(false);
+			ultimateBro.transform.parent = null;
+			ultimateBro.SetActive(false);
 			list.SetActive (false);
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
@@ -112,7 +130,7 @@ namespace Vuforia{
 
 		private void setAnimation(int animation){
 			Debug.Log("ANIMATION "+animation);
-			obj.gameObject.GetComponent<Animator> ().SetInteger ("state", animation);
+			ultimateBro.gameObject.GetComponent<Animator> ().SetInteger ("state", animation);
 		}
 
 		private void populateList(string station){

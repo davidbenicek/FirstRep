@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/home.unity
+- path: Assets/search.unity
   isLoaded: 1
   isActive: 1
