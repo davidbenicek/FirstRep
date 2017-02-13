@@ -87,6 +87,8 @@
      <Compile Include="Assets\home_screen.cs" />
      <Compile Include="Assets\info.cs" />
      <Compile Include="Assets\search.cs" />
+     <Compile Include="Assets\searchMachine.cs" />
+     <Compile Include="Assets\searchMuscle.cs" />
      <Compile Include="Assets\sxcripts\ctext.cs" />
      <None Include="Assets\StreamingAssets\QCAR\FirstRep.xml" />
      <None Include="Assets\readme_SDK.txt" />

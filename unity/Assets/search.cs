@@ -11,11 +11,13 @@ public class search : MonoBehaviour {
 	public GameObject hideBroButton;
 	public GameObject scrollView;
 	public GameObject panel;
+	public GameObject defaultButton;
 
 	private Dictionary<string, Exercise []> stations = new Dictionary<string, Exercise []>();
 	private bool muscleView = true;
-
+	private int[] offMuscle = { 0, -35, -85, -135, -225, -310 };
 	private int[] off = { 0, -110, -170 };
+
 	// Use this for initialization
 	void Start () {
 		stations.Add("squatRack",new Exercise[] {new Exercise("Highbar Squat",10, new String [] {"Quads","Lower Back"}), new Exercise("Overhead Squat",11, new String [] {"Quads","Deltoids","Lower Back"}), new Exercise("Piston Squat",12,new String [] {"Quads","Lower Back"}), new Exercise("Front Squat",13, new String [] {"Quads","Abs"})});
@@ -24,34 +26,44 @@ public class search : MonoBehaviour {
 		populateSearch ();
 	}
 	void populateSearch(){
-		List<String> muscles = getAllMusclesExercised ();
+		if (muscleView) {
+			List<String> muscles = getAllMuscles ();
+			Dictionary<string, Exercise[]> muscleList = new Dictionary<string, Exercise[]> ();
+
+			foreach (String muscle in muscles) {
+				muscleList.Add (muscle, getExercisesForMuscle (muscle));
+			}
+			drawMuscles (muscleList);
+		} else {
+			drawMachines ();
+		}
+	}
+	void drawMuscles(Dictionary<string, Exercise[]> muscleList){
 		int x = 0;
 		//For each station
-		foreach (KeyValuePair<String,Exercise []> entry in stations) {
+		foreach (String muscle in muscleList.Keys) {
 			//Copy the big category block
-			GameObject category = Instantiate (GameObject.Find("Category"));
+			GameObject category = Instantiate (defaultButton);
 			//Move to same position as parent
-			category.transform.position = GameObject.Find("Category").transform.position;
+			category.transform.position = defaultButton.transform.position;
 			//Set parent object
 			category.transform.parent = list.gameObject.transform;
 			//Move it down by a predifined amount
-			category.transform.localPosition += new Vector3 (0, off[x], 0);
-			category.transform.localScale = GameObject.Find ("Category").transform.localScale;
+			category.transform.localPosition += new Vector3 (0, offMuscle[x], 0);
+			category.transform.localScale = defaultButton.transform.localScale;
 			//Set the parent as the list
 			category.transform.parent = list.gameObject.transform;
 			//Set the heading as the key
-			category.GetComponentsInChildren<Text>()[0].text = entry.Key;
+			category.GetComponentsInChildren<Text>()[0].text = muscle;
 			//Draw the exercises relating to this station
-			drawExercisesForStation (entry.Key,++x, category);
+			drawExercisesForMuscle(muscleList[muscle],++x);
 		}
-		GameObject.Find("Category").SetActive(false);
+		defaultButton.SetActive(false);
 	}
-	void drawExercisesForStation(String s, int x, GameObject parent){
+	void drawExercisesForMuscle(Exercise [] exList,int x){
 		int i;
-		Debug.Log (s);
-
 		//For each exercise in the station
-		for (i = 0;i<stations[s].Length;i++) {
+		for (i = 0;i<exList.Length;i++) {
 			//Copy the initial text of the new block
 			RawImage created = (RawImage)Instantiate (GameObject.FindGameObjectsWithTag("Category")[x].GetComponentsInChildren<RawImage>()[1]);
 			//Position in first position
@@ -62,6 +74,54 @@ public class search : MonoBehaviour {
 			//Set the element down by 120 each time
 			created.transform.localPosition += new Vector3(0,-200*i,0);
 			//Set the name of this exercise
+			String exerciseName = exList[i].getName ();
+			created.gameObject.transform.GetComponentsInChildren<Text>()[0].text = exerciseName;
+			//Assign listener to show bro on lcik
+			int anim = exList[i].getAnimation();
+			created.gameObject.transform.GetComponentsInChildren<Button>()[0].onClick.AddListener (() => showBro (anim));	
+		}
+		GameObject.FindGameObjectsWithTag("Category")[x].GetComponentsInChildren<RawImage>()[1].gameObject.SetActive (false);
+		//list.gameObject.GetComponentsInChildren<RawImage>()[0].GetComponentsInChildren<Text>()[1].text = "yo1";
+	}
+	void drawMachines(){
+		int x = 0;
+		//For each station
+		foreach (KeyValuePair<String,Exercise []> entry in stations) {
+			//Copy the big category block
+			GameObject category = Instantiate (defaultButton);
+			//Move to same position as parent
+			category.transform.position = defaultButton.transform.position;
+			//Set parent object
+			category.transform.parent = list.gameObject.transform;
+			//Move it down by a predifined amount
+			category.transform.localPosition += new Vector3 (0, off[x], 0);
+			category.transform.localScale = defaultButton.transform.localScale;
+			//Set the parent as the list
+			category.transform.parent = list.gameObject.transform;
+			//Set the heading as the key
+			category.GetComponentsInChildren<Text>()[0].text = entry.Key;
+			//Draw the exercises relating to this station
+			drawExercisesForStation (entry.Key,++x);
+		}
+		defaultButton.SetActive(false);
+	}
+	void drawExercisesForStation(String s, int x){
+		int i;
+		Debug.Log (s+x);
+
+		//For each exercise in the station
+		for (i = 0;i<stations[s].Length;i++) {
+			//Copy the initial text of the new block
+			Debug.Log ("BLAAAAH "+GameObject.FindGameObjectsWithTag("Category")[x].GetComponentsInChildren<RawImage>()[1].GetComponentsInChildren<Text>()[0].text);
+			RawImage created = (RawImage)Instantiate (GameObject.FindGameObjectsWithTag("Category")[x].GetComponentsInChildren<RawImage>()[1]);
+			//Position in first position
+			created.transform.position = GameObject.FindGameObjectsWithTag("Category")[x].GetComponentsInChildren<RawImage>()[1].transform.position;
+			//Set the overall block as the parent
+			created.transform.parent = GameObject.FindGameObjectsWithTag("Category")[x].transform;
+			created.transform.localScale = GameObject.FindGameObjectsWithTag("Category")[x].GetComponentsInChildren<RawImage>()[1].transform.localScale;
+			//Set the element down by 200 each time
+			created.transform.localPosition += new Vector3(0,-200*i,0);
+			//Set the name of this exercise
 			String exerciseName = stations [s] [i].getName ();
 			Debug.Log(s +" yo "+exerciseName);
 			created.gameObject.transform.GetComponentsInChildren<Text>()[0].text = exerciseName;
@@ -70,21 +130,23 @@ public class search : MonoBehaviour {
 		}
 		GameObject.FindGameObjectsWithTag("Category")[x].GetComponentsInChildren<RawImage>()[1].gameObject.SetActive (false);
 		//list.gameObject.GetComponentsInChildren<RawImage>()[0].GetComponentsInChildren<Text>()[1].text = "yo1";
-
-
  	}
-
-	void showBro(String machine,String exercise)
-	{
-		Debug.Log (exercise + "  " + machine);
+	void showBro(int anim){
+		Debug.Log ("Set animation"+anim);
 		bro.SetActive (true);
 		panel.SetActive (false);
 		scrollView.SetActive (false);
 		hideBroButton.SetActive (true);
+		bro.gameObject.GetComponent<Animator> ().SetInteger ("state", anim);
+		bro.transform.localPosition = new Vector3(0, -500, 377);
+	}
+	void showBro(String machine,String exercise)
+	{
+		Debug.Log (exercise + "  " + machine);
+
 		int an = getAnimationCode (machine, exercise);
 		Debug.Log (an);
-		bro.gameObject.GetComponent<Animator> ().SetInteger ("state", an);
-		bro.transform.localPosition = new Vector3(0, -500, 377);
+		showBro (an);
 	}
 
 	public void hideBro(){
@@ -103,7 +165,7 @@ public class search : MonoBehaviour {
 		}
 		return -1;
 	}
-	private List<String> getAllMusclesExercised(){
+	private List<String> getAllMuscles(){
 		List<String> muscles = new List<String>();
 		foreach (KeyValuePair<String,Exercise []> entry in stations) {
 			int i;
@@ -120,6 +182,23 @@ public class search : MonoBehaviour {
 		muscles.Sort ();
 		return muscles;
 	}
+	private Exercise [] getExercisesForMuscle(String muscle){
+		List<Exercise> exercises = new List<Exercise>();
+		foreach (KeyValuePair<String,Exercise []> entry in stations) {
+			int i;				
+			for (i = 0; i < entry.Value.Length; i++) { //For each exercise
+				String [] musclesTrainned = entry.Value [i].getMuscles();
+				int j;
+				for (j = 0; j < musclesTrainned.Length; j++) {
+					if (object.Equals(musclesTrainned [j], muscle)) {
+						Debug.Log ("YOOO" + entry.Value [i].getName() + "   " + muscle);
+						exercises.Add (entry.Value [i]);
+					}
+				}
+			}
+		}
+		return exercises.ToArray();
+	}
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Escape)) { 
@@ -128,10 +207,17 @@ public class search : MonoBehaviour {
 	}
 
 	public void setSearchView(bool view){
-		muscleView = view;
+		if (view != muscleView) {
+			if (view)
+				SceneManager.LoadScene ("searchMuscle");
+			else {
+				SceneManager.LoadScene ("searchMachine");
+			}
+		}
 	}
 
 	public void goHome(){
 		SceneManager.LoadScene("home");
 	}
+
 }
