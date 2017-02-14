@@ -10,7 +10,7 @@ public class default_view : MonoBehaviour {
 	bool interupted = false;
 	// Use this for initialization
 	void Start () {
-		nextInterupt = DateTime.Now.AddMinutes(0.2);
+		nextInterupt = DateTime.Now.AddMinutes(1);
 		Debug.Log ("Set the timer");
 
 	}
@@ -35,6 +35,6 @@ public class default_view : MonoBehaviour {
 	}
 	public void searchToggle(){
 		Debug.Log("Search toggle");
-		SceneManager.LoadScene("search");
+		SceneManager.LoadScene("searchMachine");
 	}
 }
