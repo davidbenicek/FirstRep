@@ -56,7 +56,7 @@
   \Large
   \vskip 6em%
   \noindent
-  Level 4 Project --- \@date 
+  Level 4 20 Credit Joint Honours Project --- \@date 
   \vfill
 \end{titlepage}%
 \setcounter{footnote}{0}%
